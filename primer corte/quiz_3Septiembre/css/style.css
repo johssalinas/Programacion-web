@@ -1,0 +1,63 @@
+.text-blanco{
+    color: white;
+}
+.text-rojo{
+    color: red;
+}
+
+.back-aqua{
+    background-color:aqua;
+}
+.back-azul{
+    background-color:rgb(1, 1, 214);
+}
+.back-verde-oscuro{
+    background-color:green;
+}
+.back-gris{
+    background-color:rgb(80, 80, 80);
+}
+.back-gris-claro{
+    background-color:rgb(172, 172, 172);
+}
+.back-cafe{
+    background-color:rgb(112, 95, 0);
+}
+.back-amarillo{
+    background-color:yellow;
+}
+.back-vino{
+    background-color:#920000;
+}
+.back-verde-claro{
+    background-color:#4cfb00;
+}
+.back-rojo{
+    background-color:red;
+}
+.back-negro{
+    background-color:black;
+}
+.back-rosado{
+    background-color:#ff009d;
+}
+.back-morado{
+    background-color:rgb(172, 2, 95);
+}
+
+caption{
+    font-size: 13px;
+}
+
+.size-grande{
+    font-size: 27px;
+}
+
+th{
+    height: 25px;
+    max-width: 150px;
+    font-size: 15px;
+}
+td{
+    font-size: 11px;
+}
