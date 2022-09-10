@@ -1,3 +1,7 @@
+table{
+    background-color: black;
+}
+
 .text-blanco{
     color: white;
 }
@@ -21,7 +25,7 @@
     background-color:rgb(172, 172, 172);
 }
 .back-cafe{
-    background-color:rgb(112, 95, 0);
+    background-color:olive;
 }
 .back-amarillo{
     background-color:yellow;
@@ -39,10 +43,10 @@
     background-color:black;
 }
 .back-rosado{
-    background-color:#ff009d;
+    background-color:fuchsia;
 }
 .back-morado{
-    background-color:rgb(172, 2, 95);
+    background-color:purple;
 }
 
 caption{
