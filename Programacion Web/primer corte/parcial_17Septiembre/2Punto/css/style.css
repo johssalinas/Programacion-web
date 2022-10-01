@@ -1,0 +1,40 @@
+table{
+    border: blue 10px solid;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0px;
+}
+
+img{
+    width: 100px;
+    height: auto;
+}
+
+th{
+    color: red;
+}
+
+td,th{
+    border: blue 3px solid;
+    padding: 15px;
+}
+.formato-email{
+    text-decoration: underline;
+    color: blue;
+}
+
+li{
+    color: orange;
+}
+
+
+ol{counter-reset: item;}
+ol li{
+list-style: none;
+}
+ol li:before {
+content: counter(item) ". ";
+counter-increment: item;
+color: green;
+}

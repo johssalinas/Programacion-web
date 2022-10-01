@@ -1,0 +1,85 @@
+table{
+    border: red 10px solid;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 15px;
+}
+
+.text-blanco{
+    color: white;
+}
+.text-rojo{
+    color: red;
+}
+
+.back-aqua{
+    background-color:aqua;
+}
+.back-azul{
+    background-color:rgb(1, 1, 214);
+}
+.back-verde-oscuro{
+    background-color:green;
+}
+.back-gris{
+    background-color:rgb(80, 80, 80);
+}
+.back-gris-claro{
+    background-color:rgb(172, 172, 172);
+}
+.back-cafe{
+    background-color:olive;
+}
+.back-amarillo{
+    background-color:yellow;
+}
+.back-vino{
+    background-color:#920000;
+}
+.back-verde-claro{
+    background-color:#4cfb00;
+}
+.back-rojo{
+    background-color:red;
+}
+.back-negro{
+    background-color:black;
+}
+.back-rosado{
+    background-color:fuchsia;
+}
+.back-morado{
+    background-color:purple;
+}
+
+caption{
+    font-size: 13px;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.size-grande{
+    font-size: 27px;
+}
+
+th, td{
+    margin: 50px;
+    text-align: center;
+}
+
+
+th{
+    border: red .5px solid;
+    height: 45px;
+    max-width: 2000px;
+    font-size: 15px;
+    padding: 5px;
+}
+td{
+    padding: 15px;
+    border: red .5px solid; 
+    border-spacing: 15px;
+    font-size: 11px;
+}
