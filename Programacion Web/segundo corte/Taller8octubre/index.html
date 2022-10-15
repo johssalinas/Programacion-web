@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taller 8 de octubre</title>
+</head>
+<body>
+
+  <p>UTS - Marcos de trabajo Segundo Corte</p>
+  <div id="app">
+      <h1>{{titulo}}</h1>
+      <input v-model='nuevoEquipo' v-on:keyup.enter="agregarEquipo">
+      <button v-on:click="agregarEquipo">Guardar</button>
+  <ul>
+        <li v-for="equipo of equipos">
+            {{equipo.nombre}} - {{equipo.Ciudad}} -
+            <input type="number" v-model.number="equipo.puntos">
+            <span v-if="equipo.puntos ===1"> - Campeon</span>
+            <span v-on:click="equipo.puntos +=1">+</span>
+        </li>
+  </ul>
+      <h4>TOTAL: {{sumarPuntos}}</h4>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
