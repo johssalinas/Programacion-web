@@ -106,24 +106,113 @@ function ejercio19(){
     console.log("MENORES A 30 : ", cont3);
 }
 
-function ejercio20(){}
+function ejercio20(){
+    var lista = [2];
 
-function ejercio21(){}
+    for(var i = 0; i<2 ; i++){
+        lista[i]= prompt("infrese un numero: ");
+    }
+    var a ;
+    if(lista.length>1){
+        for(var i = 1; i<2 ; i++){
+            if(lista[i-1] > lista[i]){
+                a = lista[i-1];
+                lista[i-1] = lista[i];
+                lista[i] = a;
+            }
+        }
+    }
+    return lista;
+}
 
-function ejercio22(){}
+function ejercio21(){
+    var lista = [10];
+    var cont = 0;
+    while(lista.length < 10){
+        if(cont%2 == 0) lista.push(cont);
+        cont++;
+    }
+    return lista;
+}
 
-function ejercio23(){}
+function ejercio22(){
+    var horas = prompt("ingrese las horas : ");
+    return horas*60;
+}
 
-function ejercio24(){}
+function ejercio23() {
+    var horas = prompt("ingrese las horas de estacionamiento : ");
+    if (horas > 0){
+        if(horas > 1) {
+            console.log((horas - 1) * 2000 + 3000);
+            return (horas - 1) * 2000 + 3000;
+        }
+        console.log(horas* 3000);
+        return horas* 3000;
+    }
+}
 
-function ejercio25(){}
+function ejercio24(){
+    while(true) {
+        var tickets = prompt("ingrese la cantidad de entradas: ");
+        switch (tickets) {
+            case 1:
+                return tickets*10000;
+            case 2:
+                return tickets*10000*0.90;
+            case 3:
+                return tickets*100000.85;
+            case 4:
+                return tickets*10000*0.80;
+            default:
+                console.log("cantidad ecxedida")
+        }
+    }
+}
 
-function ejercio26(){}
+function ejercio25(){
+    var velovidad = prompt("ingrese las horas : ");
+    return velocidad*(5/18);
+}
 
-function ejercio27(){}
+function ejercio26(){
+    var nombre = prompt("ingrese el nombre: ");
+    var nota1 = prompt("nota 1: ");
+    var nota2 = prompt("nota 2: ");
+    var nota3 = prompt("nota 3: ");
+    var notaFinal = (nota1*0.33)+(nota2*0.33)+(nota3*0.34);
+    console.log("el estudiante "+ nombre);
+    console.log("nota final: "+ notaFinal);
+    if(notaFinal>=3) console.log("APROVADO");
+    else console.log("REPROVADO");
+}
 
-function ejercio28(){}
+function ejercio27(){
+    var horas = prompt("ingrese las horas totales trabajadas: ");
+    var cantObreros = 50;
+    var ValorXHora = 30000;
+    return (horas * ValorXHora);
+}
 
-function ejercio29(){}
+function ejercio28(){
+    var valor = prompt("ingrese las horas : ");
+    var factorial = 1;
+    for(var i = 1; i < valor; i++){
+        factorial *= i;
+    }
+    console.log("factorial de "+valor+" es: "+ factorial);
+}
 
-function ejercio30(){}
+function ejercio29(){
+    var num = prompt("ingrese un numero: ");
+    for(var i = 0; i < 10;i++){
+        console.log(i*num);
+    }
+}
+
+function ejercio30(){
+    var num = prompt();
+    if(num%2 == 0 || num%3 == 0 || num%5 == 0){
+        console.log(" es primo")
+    }
+}
