@@ -1,45 +1,360 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <title>Taller 22 de Octubre</title>
 </head>
-
 <body>
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingPrimer">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsePrimer" aria-expanded="false" aria-controls="flush-collapsePrimer">
+        Ejercicio 1
+      </button>
+    </h2>
+    <div id="flush-collapsePrimer" class="accordion-collapse collapse" aria-labelledby="flush-headingPrimer" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><div class="col m-5"><h2>Calcular el Área de un Cuadrado.</h2><button type="button" onclick="ejercio1()" class="btn btn-primary btn-lg">Ejercicio 1</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingDos">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseDos" aria-expanded="false" aria-controls="flush-collapseDos">
+        Ejercicio 2
+      </button>
+    </h2>
+    <div id="flush-collapseDos" class="accordion-collapse collapse" aria-labelledby="flush-headingDos" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><div class="col m-5"><h2>Calcular el Área de un Circulo.</h2><button type="button" onclick="ejercio2()" class="btn btn-primary btn-lg">Ejercicio 2</button></div></div></div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingTres">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTres" aria-expanded="false" aria-controls="flush-collapseTres">
+        Ejercicio 3
+      </button>
+    </h2>
+    <div id="flush-collapseTres" class="accordion-collapse collapse" aria-labelledby="flush-headingTres" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><div class="col m-5"><h2>Convertir de Grados Fahrenheit a Celsius.</h2><button type="button" onclick="ejercio3()" class="btn btn-primary btn-lg">Ejercicio 3</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingCuatro">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseCuatro" aria-expanded="false" aria-controls="flush-collapseCuatro">
+        Ejercicio 4
+      </button>
+    </h2>
+    <div id="flush-collapseCuatro" class="accordion-collapse collapse" aria-labelledby="flush-headingCuatro" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><div class="col m-5"><h2>Suma y resta de 2 números.</h2><button type="button" onclick="ejercio4()" class="btn btn-primary btn-lg">Ejercicio 4</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingQuinto">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseQuinto" aria-expanded="false" aria-controls="flush-collapseQuinto">
+        Ejercicio 5
+      </button>
+    </h2>
+    <div id="flush-collapseQuinto" class="accordion-collapse collapse" aria-labelledby="flush-headingQuinto" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><div class="col m-5"><h2>Mayor de 2 números.</h2><button type="button" onclick="ejercio5()" class="btn btn-primary btn-lg">Ejercicio 5</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading6">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse6" aria-expanded="false" aria-controls="flush-collapse6">
+        Ejercicio 6
+      </button>
+    </h2>
+    <div id="flush-collapse6" class="accordion-collapse collapse" aria-labelledby="flush-heading6" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><div class="col m-5"><h2>Área de un Triángulo.</h2><button type="button" onclick="ejercio6()" class="btn btn-primary btn-lg">Ejercicio 6</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading7">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse7" aria-expanded="false" aria-controls="flush-collapse7">
+        Ejercicio 7
+      </button>
+    </h2>
+    <div id="flush-collapse7" class="accordion-collapse collapse" aria-labelledby="flush-heading7" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><div class="col m-5"><h2>Mayor de 3 números.</h2><button type="button" onclick="ejercio7()" class="btn btn-primary btn-lg">Ejercicio 7</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading8">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse8" aria-expanded="false" aria-controls="flush-collapse8">
+        Ejercicio 8
+      </button>
+    </h2>
+    <div id="flush-collapse8" class="accordion-collapse collapse" aria-labelledby="flush-heading8" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><div class="col m-5"><h2>Generar la seria que permita visualizar los números del 1 al 7</h2><button type="button" onclick="ejercio8()" class="btn btn-primary btn-lg">Ejercicio 8</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading9">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse9" aria-expanded="false" aria-controls="flush-collapse9">
+        Ejercicio 9
+      </button>
+    </h2>
+    <div id="flush-collapse9" class="accordion-collapse collapse" aria-labelledby="flush-heading9" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><div class="col m-5"><h2>Desarrolle un programa que permita leer dos valores distintos, determinar cuál de los dos valores es el mayor y menor</h2><button type="button" onclick="ejercio9()" class="btn btn-primary btn-lg">Ejercicio 9</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading10">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse10" aria-expanded="false" aria-controls="flush-collapse10">
+        Ejercicio 10
+      </button>
+    </h2>
+    <div id="flush-collapse10" class="accordion-collapse collapse" aria-labelledby="flush-heading10" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Desarrolle un programa que permita leer tres valores y almacenarlos en las variables A, B y C respectivamente. Debe imprimir cual es el mayor y cuál es el menor. recuerde constatar que los tres valores introducidos por el teclado sean valores distintos. Presente un mensaje de alerta en caso de que se detecte la introducción de valores iguales.</h2><div class="col m-5"><button type="button" onclick="ejercio10()" class="btn btn-primary btn-lg">Ejercicio 10</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading11">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse11" aria-expanded="false" aria-controls="flush-collapse11">
+        Ejercicio 11
+      </button>
+    </h2>
+    <div id="flush-collapse11" class="accordion-collapse collapse" aria-labelledby="flush-heading11" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Desarrolle un programa que lea cuatro números diferentes y a continuación imprima el mayor de los cuatro números introducidos y también el menor de ellos.</h2><div class="col m-5"><button type="button" onclick="ejercio11()" class="btn btn-primary btn-lg">Ejercicio 11</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading12">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse12" aria-expanded="false" aria-controls="flush-collapse12">
+        Ejercicio 12
+      </button>
+    </h2>
+    <div id="flush-collapse12" class="accordion-collapse collapse" aria-labelledby="flush-heading12" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Desarrolle un programa que realice la sumatoria de los números enteros comprendidos entre el 1 y el 10, es decir, 1 + 2 + 3 +…. + 10.</h2><div class="col m-5"><button type="button" onclick="ejercio12()" class="btn btn-primary btn-lg">Ejercicio 12</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading13">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse13" aria-expanded="false" aria-controls="flush-collapse13">
+        Ejercicio 13
+      </button>
+    </h2>
+    <div id="flush-collapse13" class="accordion-collapse collapse" aria-labelledby="flush-heading13" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Desarrolle un programa que realice la sumatoria de los números enteros múltiplos de 5, comprendidos entre el 1 y el 100, es decir, 5 + 10 + 15 +…. + 100. El programa deberá imprimir los números en cuestión y finalmente su sumatoria.</h2><div class="col m-5"><button type="button" onclick="ejercio13()" class="btn btn-primary btn-lg">Ejercicio 13</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading14">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse14" aria-expanded="false" aria-controls="flush-collapse14">
+        Ejercicio 14
+      </button>
+    </h2>
+    <div id="flush-collapse14" class="accordion-collapse collapse" aria-labelledby="flush-heading14" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Desarrolle un programa que realice la sumatoria de los números enteros pares comprendidos entre el 1 y el 100, es decir, 2 + 4 + 6 +…. + 100. El programa deberá imprimir los números en cuestión y finalmente su sumatoria.</h2><div class="col m-5"><button type="button" onclick="ejercio14()" class="btn btn-primary btn-lg">Ejercicio 14</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading15">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse15" aria-expanded="false" aria-controls="flush-collapse15">
+        Ejercicio 15
+      </button>
+    </h2>
+    <div id="flush-collapse15" class="accordion-collapse collapse" aria-labelledby="flush-heading15" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Desarrolle un programa que lea los primeros 300 números enteros y determine cuántos de ellos son impares; al final deberá indicar su sumatoria.</h2><div class="col m-5"><button type="button" onclick="ejercio15()" class="btn btn-primary btn-lg">Ejercicio 15</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading16">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse16" aria-expanded="false" aria-controls="flush-collapse16">
+        Ejercicio 16
+      </button>
+    </h2>
+    <div id="flush-collapse16" class="accordion-collapse collapse" aria-labelledby="flush-heading16" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Determinar la hipotenusa de un triángulo rectángulo conocidas las longitudes de sus dos catetos.</h2><div class="col m-5"><button type="button" onclick="ejercio16()" class="btn btn-primary btn-lg">Ejercicio 16</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading17">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse17" aria-expanded="false" aria-controls="flush-collapse17">
+        Ejercicio 17
+      </button>
+    </h2>
+    <div id="flush-collapse17" class="accordion-collapse collapse" aria-labelledby="flush-heading17" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Desarrolle un programa que permita determinar el área y volumen de un cilindro dado su radio (R) y altura (H).</h2><div class="col m-5"><button type="button" onclick="ejercio17()" class="btn btn-primary btn-lg">Ejercicio 17</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading18">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse18" aria-expanded="false" aria-controls="flush-collapse18">
+        Ejercicio 18
+      </button>
+    </h2>
+    <div id="flush-collapse18" class="accordion-collapse collapse" aria-labelledby="flush-heading18" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Desarrolle un programa que permita leer un valor cualquiera N y escriba si dicho número es par o impar.</h2><div class="col m-5"><button type="button" onclick="ejercio18()" class="btn btn-primary btn-lg">Ejercicio 18</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading19">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse19" aria-expanded="false" aria-controls="flush-collapse19">
+        Ejercicio 19
+      </button>
+    </h2>
+    <div id="flush-collapse19" class="accordion-collapse collapse" aria-labelledby="flush-heading19" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Desarrolle un programa que le permita determinar de una lista de 10 números ingresados por el
+        usuario:
+        <ol type="a">
+          <li>¿Cuántos están entre el 50 y 75, ambos inclusive?</li>
+          <li>¿Cuántos mayores de 80?</li>
+          <li>¿Cuántos menores de 30?</li>
+        </ol>
+      </h2><div class="col m-5"><button type="button" onclick="ejercio19()" class="btn btn-primary btn-lg">Ejercicio 19</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading20">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse20" aria-expanded="false" aria-controls="flush-collapse20">
+        Ejercicio 20
+      </button>
+    </h2>
+    <div id="flush-collapse20" class="accordion-collapse collapse" aria-labelledby="flush-heading20" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Desarrolle un programa que permita leer dos números y ordenarlos de menor a mayor, si es el caso.</h2><div class="col m-5"><button type="button" onclick="ejercio20()" class="btn btn-primary btn-lg">Ejercicio 20</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading21">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse21" aria-expanded="false" aria-controls="flush-collapse21">
+        Ejercicio 21
+      </button>
+    </h2>
+    <div id="flush-collapse21" class="accordion-collapse collapse" aria-labelledby="flush-heading21" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Realice un programa que determine de los 10 primeros números, ¿Cuáles son múltiplos de 2?</h2><div class="col m-5"><button type="button" onclick="ejercio21()" class="btn btn-primary btn-lg">Ejercicio 21</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading22">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse22" aria-expanded="false" aria-controls="flush-collapse22">
+        Ejercicio 22
+      </button>
+    </h2>
+    <div id="flush-collapse22" class="accordion-collapse collapse" aria-labelledby="flush-heading22" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Realice un programa que determine cuantos minutos hay en 5 horas</h2><div class="col m-5"><button type="button" onclick="ejercio22()" class="btn btn-primary btn-lg">Ejercicio 22</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading23">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse23" aria-expanded="false" aria-controls="flush-collapse23">
+        Ejercicio 23
+      </button>
+    </h2>
+    <div id="flush-collapse23" class="accordion-collapse collapse" aria-labelledby="flush-heading23" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Realice un programa que calcule el monto a pagar por el servicio de estacionamiento, teniendo en cuenta que por la primera hora de estadía se tiene una tarifa de $ 3.000 pesos y las restantes tienen un costo de $ 2.000 pesos.</h2><div class="col m-5"><button type="button" onclick="ejercio23()" class="btn btn-primary btn-lg">Ejercicio 23</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading24">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse24" aria-expanded="false" aria-controls="flush-collapse24">
+        Ejercicio 24
+      </button>
+    </h2>
+    <div id="flush-collapse24" class="accordion-collapse collapse" aria-labelledby="flush-heading24" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Realice un programa que determine el pago a realizar por la entrada a un espectáculo donde se pueden comprar sólo hasta cuatro entradas, donde al costo de dos entradas se les descuenta el 10%, al de tres entradas el 15% y a la compra de cuatro tickets se le descuenta el 20 %. El valor unitario de la entrada es de $ 10.000 pesos.</h2><div class="col m-5"><button type="button" onclick="ejercio24()" class="btn btn-primary btn-lg">Ejercicio 24</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading25">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse25" aria-expanded="false" aria-controls="flush-collapse25">
+        Ejercicio 25
+      </button>
+    </h2>
+    <div id="flush-collapse25" class="accordion-collapse collapse" aria-labelledby="flush-heading25" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Realice un programa que, a partir de proporcionarle la velocidad de un automóvil, expresada en kilómetros por hora, proporcione la velocidad en metros por segundo.</h2><div class="col m-5"><button type="button" onclick="ejercio25()" class="btn btn-primary btn-lg">Ejercicio 25</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading26">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse26" aria-expanded="false" aria-controls="flush-collapse26">
+        Ejercicio 26
+      </button>
+    </h2>
+    <div id="flush-collapse26" class="accordion-collapse collapse" aria-labelledby="flush-heading26" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Desarrolle un programa que permita calcular la nota final de 3 Notas parciales, el primer corte equivale al 33%, el segundo al 33% y el tercero al 34%. El sistema debe imprimir el nombre del alumno y la nota final sabiendo si aprobó o reprobó la materia.</h2><div class="col m-5"><button type="button" onclick="ejercio26()" class="btn btn-primary btn-lg">Ejercicio 26</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading27">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse27" aria-expanded="false" aria-controls="flush-collapse27">
+        Ejercicio 27
+      </button>
+    </h2>
+    <div id="flush-collapse27" class="accordion-collapse collapse" aria-labelledby="flush-heading27" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Desarrolle un programa para la empresa Constructora Tecnovivir Casas C.A., que le permita calcular e imprimir el valor total de la nómina para la cancelación a un total de 50 obreros calificados a quienes debe cancelar por horas trabajadas. La hora trabajada se pautó en $ 30.000 pesos. El sistema debe imprimir el valor total de la nómina.</h2><div class="col m-5"><button type="button" onclick="ejercio27()" class="btn btn-primary btn-lg">Ejercicio 27</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading28">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse28" aria-expanded="false" aria-controls="flush-collapse28">
+        Ejercicio 28
+      </button>
+    </h2>
+    <div id="flush-collapse28" class="accordion-collapse collapse" aria-labelledby="flush-heading28" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Calcular el factorial de cualquier número ingresado en el sistema.</h2><div class="col m-5"><button type="button" onclick="ejercio28()" class="btn btn-primary btn-lg">Ejercicio 28</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading29">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse29" aria-expanded="false" aria-controls="flush-collapse29">
+        Ejercicio 29
+      </button>
+    </h2>
+    <div id="flush-collapse29" class="accordion-collapse collapse" aria-labelledby="flush-heading29" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Calcular la tabla de multiplicar hasta el 10 del número 5.</h2><div class="col m-5"><button type="button" onclick="ejercio29()" class="btn btn-primary btn-lg">Ejercicio 29</button></div></div>
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-heading30">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse30" aria-expanded="false" aria-controls="flush-collapse30">
+        Ejercicio 30
+      </button>
+    </h2>
+    <div id="flush-collapse30" class="accordion-collapse collapse" aria-labelledby="flush-heading30" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><h2>Desarrolle un programa que permita leer un valor entero positivo N y determinar si es primo ono</h2><div class="col m-5"><button type="button" onclick="ejercio30()" class="btn btn-primary btn-lg">Ejercicio 30</button></div></div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <!-- Button trigger modal -->
-  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-    Launch demo modal
-  </button>
-
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
-
 </html>

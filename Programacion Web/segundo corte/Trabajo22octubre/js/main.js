@@ -1,4 +1,3 @@
-
 function ejercio1(){
     var altura = prompt('Digite la altura: ');
     var area = (altura**2);
@@ -7,7 +6,7 @@ function ejercio1(){
 
 function ejercio2(){
     var radio=prompt('Digite el radio: ');
-    var area =(Math.PI)*(radio**2);
+    var area =Math.round((Math.PI)*(radio**2));
     alert(area);
 }
 
@@ -60,7 +59,7 @@ function ejercio8(){
 function ejercio9(){
     var num1 = prompt('Digite un número: ');
     var num2 = prompt('Digite otro número: ');
-    while(num2 ==num1)
+    while(num2 ===num1)
         num2 = prompt('Inválido, digite otro número: ');
     if(num1>num2)
         alert(num1 + " es mayor que " + num2 + "\n" + num2 + " es menor que " + num1);
@@ -70,34 +69,37 @@ function ejercio9(){
 function ejercio10(){
     var num1 = prompt('Digite un número: ');
     var num2 = prompt('Digite otro número: ');
-    while(num2 ==num1)
+    while(num2 ===num1)
         num2 = prompt('Inválido, digite otro número: ');
     var num3 = prompt('Digite otro número más: ');
-    while(num3 ==num1 || num3 ==num2)
+    while(num3 ===num1 || num3 ===num2)
         num3 = prompt('Inválido, digite otro número: ');
-        
+
     if(num1>num2 && num1>num3)
         alert(num1 + " es el mayor");
-    else if(num2>num1 && num2>num3)    
+    else if(num2>num1 && num2>num3)
         alert(num2 + " es el mayor");
     else alert(num3 + " es el mayor");
-    
+
     if(num1<num2 && num1<num3)
         alert(num1 + " es el menor");
-    else if(num2<num1 && num2<num3)    
+    else if(num2<num1 && num2<num3)
         alert(num2 + " es el menor");
     else alert(num3 + " es el menor");
 }
 
 function ejercio11(){
-    var num, mayor = 0, menor =0;
-    for (var i = 0; i< 4; i++){
+    var num, mayor = 0, menor =0, numeros=[4], i =0;
+    while (i< 4){
         num = prompt('Ingrese un numero');
-        if(num > mayor) { mayor = num;}
-        if(num > menor){menor = num;}
+        numeros[i] = num;
+        if(numeros[i]=== numeros[i-1] || numeros[i]=== numeros[i-2] || numeros[i]=== numeros[i-3] || num =='') {alert("Digite un número válido"); continue}
+        if(num > mayor) mayor = num;
+        if(num < menor || menor === 0) menor = num;
+        i++
     }
-    alert("MAYOR :",  mayor);
-    alert("MENOR :",  menor);
+    alert("MAYOR : " +  mayor);
+    alert("MENOR : " +  menor);
 }
 
 function ejercio12(){
@@ -136,7 +138,7 @@ function ejercio15(){
 function ejercio16(){
     var ladoA = prompt("lado a: ");
     var ladoB = prompt("lado b: ");
-    alert((ladoA**2)+(ladoB**2 ))**0.5;
+    alert(((ladoA**2)+(ladoB**2 ))**0.5);
 }
 
 function ejercio17(radio, altura){
@@ -148,7 +150,7 @@ function ejercio17(radio, altura){
 
 function ejercio18(){
     var num = prompt('Ingrese un numero');
-    alert((num%2==0)?"ES PAR" :"ES IMPAR");
+    alert((num%2===0)?"ES PAR" :"ES IMPAR");
 }
 
 function ejercio19(){
@@ -189,7 +191,7 @@ function ejercio21(){
     var lista = [10];
     var cont = 0;
     while(lista.length < 10){
-        if(cont%2 == 0) lista.push(cont);
+        if(cont%2 === 0) lista.push(cont);
             cont++;
     }
     var text; 
